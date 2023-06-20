@@ -1,0 +1,249 @@
+body {
+    margin: 0;
+    padding: 0 0 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#container {
+    width: 800px;
+    margin: 40px auto 0;
+}
+
+#calculator {
+    width: 375px;
+    height: 671px;
+    margin: 0 auto;
+}
+
+/* Screen and Display */
+
+#screen {
+    padding: 20px;
+    height: 200px;
+}
+
+#screen-spacer {
+    height: 95px;
+}
+
+#screen-display {
+    font-size: 14px;
+    text-align: right;
+    padding-right: 20px;
+    height: 30px;
+}
+
+/* #screen-input {
+    font-size: 42px;
+    text-align: right;
+} */
+
+#num-field,
+#zero-span {
+    display: block;
+    text-align: right;
+    font-size: 46px;
+    padding-right: 20px;
+}
+
+#top-bar {
+    display: flex;
+}
+
+#name {
+    flex: 1;
+    font-weight: bold;
+}
+
+#mode {
+    flex: 0.25;
+    padding: 5px;
+    border-radius: 25px;
+}
+
+.mode-set {
+    display: inline-block;
+    width: 42%;
+    height: 12px;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+.mode-div {
+    width: 1px;
+    height: 13px;
+    display: inline-block;
+}
+
+/* Keypad */
+
+#keypad {
+    width: 292px;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+.row {
+    margin-bottom: 3px;
+}
+
+.button {
+    width: 70px;
+    height: 75px;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px
+}
+
+.lrg-btn {
+    width: 144px;
+}
+
+.no-display,
+.no-display#zero-span {
+    display: none;
+}
+
+/*** Dark Mode ***/
+
+.dark-mode {
+    color: #fff;
+}
+
+.dark-mode #calculator {
+    background-color: #2A2D36;
+}
+
+.dark-mode #screen {
+    background-color: #22252E;
+}
+
+.dark-mode #mode {
+    background-color: #161922;
+}
+
+.dark-mode .mode-div {
+    background-color: #fff;
+}
+
+.dark-mode #light-mode {
+    background-image: url(images/dark/sun.png);
+}
+
+.dark-mode #dark-mode {
+    background-image: url(images/dark/moon.png);
+}
+
+.dark-mode .button {
+    background-color: #22252E;
+    color: #fff;
+}
+
+.dark-mode .button:hover {
+    background-color: #161922;
+}
+
+.dark-mode .operator {
+    background-color: #141519;
+}
+
+.dark-mode #del {
+    background-color: #FF695C;
+}
+
+.dark-mode #del:hover {
+    background-color: #D05449;
+}
+
+.dark-mode #top-row .lrg-btn {
+    background-color: #DD2211;
+}
+
+.dark-mode #top-row .lrg-btn:hover {
+    background-color: #91190E;
+}
+
+.dark-mode #lst-row .lrg-btn {
+    background-color: #2A8014;
+}
+
+.dark-mode #lst-row .lrg-btn:hover {
+    background-color: #1A4D0D;
+}
+
+/*** light Mode ***/
+
+.light-mode {
+    color: #000;
+    background-color: #161922;
+}
+
+.light-mode #calculator {
+    background-color: #F9F9F9;
+    border: 1px solid #E1DBDB;
+}
+
+.light-mode #screen {
+    background-color: #fff;
+}
+
+.light-mode #mode {
+    background-color: #EFEFEF;
+}
+
+.light-mode .mode-div {
+    background-color: #000;
+}
+
+.light-mode #light-mode {
+    background-image: url(images/light/sun.png);
+}
+
+.light-mode #dark-mode {
+    background-image: url(images/light/moon.png);
+}
+
+.light-mode .button {
+    background-color: #EFEFEF;
+    color: #000;
+}
+
+.light-mode .button:hover {
+    background-color: #E1DBDB;
+}
+
+.light-mode .operator {
+    background-color: #C3BEBE;
+}
+
+.light-mode .operation:hover {
+    background-color: #A8A8A8;
+}
+
+.light-mode #del {
+    background-color: #F9A9A2;
+}
+
+.light-mode #del:hover {
+    background-color: #E3877F;
+}
+
+.light-mode #top-row .lrg-btn {
+    background-color: #FF695C;
+}
+
+.light-mode #top-row .lrg-btn:hover {
+    background-color: #D05449;
+}
+
+.light-mode #lst-row .lrg-btn {
+    background-color: #2A8014;
+}
+
+.light-mode #lst-row .lrg-btn:hover {
+    background-color: #1A4D0D;
+}
